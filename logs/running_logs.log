@@ -1,0 +1,386 @@
+[2024-03-08 13:47:09,826: INFO: main: >>>> STAGE: Data Ingestion Started <<<<]
+[2024-03-08 13:47:09,828: INFO: common: YAML File: config/config.yaml Loaded Successfully]
+[2024-03-08 13:47:09,829: INFO: common: YAML File: params.yaml Loaded Successfully]
+[2024-03-08 13:47:09,829: INFO: common: Created Directory at: artifacts]
+[2024-03-08 13:47:09,829: INFO: common: Created Directory at: artifacts/data_ingestion]
+[2024-03-08 13:47:09,829: INFO: data_ingestion: File: artifacts/data_ingestion/data.zip already exists (Size: 11345KB)]
+[2024-03-08 13:47:09,921: INFO: main: >>>> STAGE: Data Ingestion Ended Successfully <<<<
+x==================================x]
+[2024-03-08 13:47:09,921: INFO: main: >>>> STAGE: Prepare Base Model Started <<<<]
+[2024-03-08 13:47:09,923: INFO: common: YAML File: config/config.yaml Loaded Successfully]
+[2024-03-08 13:47:09,924: INFO: common: YAML File: params.yaml Loaded Successfully]
+[2024-03-08 13:47:09,924: INFO: common: Created Directory at: artifacts]
+[2024-03-08 13:47:09,924: INFO: common: Created Directory at: artifacts/prepare_base_model]
+[2024-03-08 13:47:10,275: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-08 13:47:10,332: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:47:10,384: INFO: main: >>>> STAGE: Prepare Base Model Ended Successfully <<<<
+x==================================x]
+[2024-03-08 13:47:10,384: INFO: main: >>>> STAGE: Model Training Started <<<<]
+[2024-03-08 13:47:10,387: INFO: common: YAML File: config/config.yaml Loaded Successfully]
+[2024-03-08 13:47:10,388: INFO: common: YAML File: params.yaml Loaded Successfully]
+[2024-03-08 13:47:10,388: INFO: common: Created Directory at: artifacts]
+[2024-03-08 13:47:10,388: INFO: common: Created Directory at: artifacts/prepare_callbacks]
+[2024-03-08 13:47:10,388: INFO: common: Created Directory at: artifacts/prepare_callbacks/tensorboard_log_dir]
+[2024-03-08 13:47:10,388: INFO: common: Created Directory at: artifacts/prepare_callbacks/checkpoint_dir]
+[2024-03-08 13:47:10,390: INFO: common: Created Directory at: artifacts/training]
+[2024-03-08 13:47:10,541: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:51:01,253: INFO: main: >>>> STAGE: Model Training Ended Successfully <<<<
+x==================================x]
+[2024-03-08 13:51:01,253: INFO: main: >>>> STAGE: Model Evaluation Started <<<<]
+[2024-03-08 13:51:01,257: INFO: common: YAML File: config/config.yaml Loaded Successfully]
+[2024-03-08 13:51:01,259: INFO: common: YAML File: params.yaml Loaded Successfully]
+[2024-03-08 13:51:01,259: INFO: common: Created Directory at: artifacts]
+[2024-03-08 13:51:01,406: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:51:27,171: INFO: common: JSON File Saved at: artifacts/model_evaluation/Scores.json]
+[2024-03-08 13:51:27,171: INFO: main: >>>> STAGE: Model Evaluation Ended Successfully <<<<
+x==================================x]
+[2024-03-08 13:51:27,561: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:51:27] "GET /train HTTP/1.1" 200 -]
+[2024-03-08 13:52:43,596: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:52:43] "GET / HTTP/1.1" 200 -]
+[2024-03-08 13:52:48,526: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:52:49,022: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:52:49] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:53:01,108: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:53:01,364: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:53:01] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:53:36,812: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:53:37,028: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:53:37] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:53:45,853: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:53:46,075: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:53:46] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:54:16,601: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:54:16,822: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x157f60ee0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-08 13:54:16,824: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:54:16] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:54:22,884: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:54:23,099: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x1653abee0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-08 13:54:23,100: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:54:23] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:54:32,245: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:54:32,465: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:54:32] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:54:41,048: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:54:41,268: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:54:41] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:54:46,228: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:54:46,443: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:54:46] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:54:50,509: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:54:50,725: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:54:50] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:54:57,403: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:54:57,624: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:54:57] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:55:04,334: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:55:04,556: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:55:04] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:55:09,442: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:55:09,658: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:55:09] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:55:15,437: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:55:15,649: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:55:15] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:55:21,042: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:55:21,261: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:55:21] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:55:39,151: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:55:39,370: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:55:39] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:55:45,709: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:55:45,931: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:55:45] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:55:51,349: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:55:51,565: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:55:51] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:55:56,357: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:55:56,578: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:55:56] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:56:01,702: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:56:01,914: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:56:01] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:56:06,814: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:56:07,043: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:56:07] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:56:14,995: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:56:15,215: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:56:15] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:56:17,898: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:56:17] "GET / HTTP/1.1" 200 -]
+[2024-03-08 13:57:09,516: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:57:09] "GET / HTTP/1.1" 200 -]
+[2024-03-08 13:57:19,454: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 13:57:19,454: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 13:57:23,136: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:57:23] "GET / HTTP/1.1" 200 -]
+[2024-03-08 13:57:26,992: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:57:27,310: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:57:27] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:57:36,436: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:57:36,659: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:57:36] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 13:59:03,834: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:59:03] "GET / HTTP/1.1" 200 -]
+[2024-03-08 13:59:53,104: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 13:59:53,331: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 13:59:53] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:00:06,427: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:00:06,427: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:00:09,722: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:00:09] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:00:20,393: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:00:20,671: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:00:20] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:01:03,121: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:01:03,343: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:01:03] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:01:31,926: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:01:32,163: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:01:32] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:01:41,036: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:01:41,263: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:01:41] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:01:49,881: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:01:50,099: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x15150fb80> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-08 14:01:50,101: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:01:50] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:02:29,444: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:02:29,665: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x15150fee0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-08 14:02:29,667: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:02:29] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:02:35,001: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:02:35,216: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:02:35] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:02:50,358: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:02:50,578: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:02:50] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:04:02,355: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:04:02,581: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:04:02] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:04:09,091: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:04:09,304: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:04:09] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:04:12,144: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:04:12,366: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:04:12] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:04:16,402: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:04:16,619: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:04:16] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:04:20,660: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:04:20,945: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:04:20] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:04:24,123: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:04:24,347: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:04:24] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:04:27,540: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:04:27,754: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:04:27] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:05:25,739: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:05:25,979: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:05:25] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:05:29,476: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:05:29,687: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:05:29] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:05:32,519: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:05:32,732: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:05:32] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:05:35,845: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:05:36,062: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:05:36] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:05:38,836: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:05:39,049: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:05:39] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:05:42,248: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:05:42,459: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:05:42] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:05:48,188: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:05:48,412: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:05:48] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:06:09,961: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:06:10,188: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:06:10] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:06:55,412: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:06:55,643: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:06:55] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:07:01,113: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:07:01,334: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:07:01] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:07:42,522: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:07:42,748: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:07:42] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:07:47,101: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:07:47,327: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:07:47] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:21:31,689: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:21:31] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:21:36,070: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:21:36,406: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:21:36] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:22:02,386: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:22:02,386: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:22:02,387: INFO: _internal:  * Restarting with stat]
+[2024-03-08 14:22:05,434: WARNING: _internal:  * Debugger is active!]
+[2024-03-08 14:22:05,447: INFO: _internal:  * Debugger PIN: 128-782-729]
+[2024-03-08 14:22:10,460: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:22:10] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:22:15,617: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:22:15,920: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:22:15] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:22:38,739: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:22:38] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:22:42,352: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:22:42,575: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:22:42] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:23:03,517: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:23:03] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:23:07,376: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:23:07,596: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:23:07] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:23:15,273: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:23:15] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:23:20,311: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:23:20,538: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:23:20] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:24:03,028: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:24:03] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:24:06,249: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:24:06,473: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x16b4fc940> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-08 14:24:06,475: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:24:06] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:24:19,530: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:24:19] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:24:23,004: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:24:23,227: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x2807f2e50> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-03-08 14:24:23,228: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:24:23] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:24:45,377: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:24:45,377: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:24:45,378: INFO: _internal:  * Restarting with stat]
+[2024-03-08 14:24:48,381: WARNING: _internal:  * Debugger is active!]
+[2024-03-08 14:24:48,392: INFO: _internal:  * Debugger PIN: 128-782-729]
+[2024-03-08 14:25:02,085: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:25:02,085: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:25:04,372: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:25:04] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:25:07,981: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:25:08,260: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:25:08] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:26:15,228: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:26:15,229: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:26:16,693: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:26:16] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:26:19,794: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:26:20,072: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:26:20] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:27:00,694: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:27:00,694: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:27:02,863: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:27:03,141: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:27:03] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:30:46,208: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:30:46,209: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:30:48,077: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:30:48,352: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/osm/Desktop/new_poultry_mar8/github/Chicken_Disease_Classification/app.py", line 42, in predictRoute
+    "image": result[""]
+TypeError: list indices must be integers or slices, not str
+[2024-03-08 14:30:48,359: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:30:48] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-08 14:31:09,438: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:31:09,438: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:31:09,475: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:31:09] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:31:12,822: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:31:13,105: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:31:13] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:34:28,617: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:34:28,619: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:34:29,934: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:34:30,213: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/osm/Desktop/new_poultry_mar8/github/pf_env/lib/python3.9/site-packages/flask_cors/decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "/Users/osm/Desktop/new_poultry_mar8/github/Chicken_Disease_Classification/app.py", line 40, in predictRoute
+    result["img_data"] = image
+TypeError: list indices must be integers or slices, not str
+[2024-03-08 14:34:30,219: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:34:30] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-03-08 14:34:52,369: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:34:52,370: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:34:52,856: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:34:52] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:34:56,546: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:34:56,824: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:34:56] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:35:37,570: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:35:37] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:35:44,497: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:35:44,497: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:35:51,746: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:35:51,746: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:35:53,701: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:35:53,978: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:35:53] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:37:09,768: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:37:09,768: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:37:14,193: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:37:14,479: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:37:14] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:38:04,376: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:38:04,376: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:38:06,105: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:38:06,376: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:38:06] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:39:14,460: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:39:14,461: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:39:14,699: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:39:14] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:39:15,268: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:39:15] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:39:19,093: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:39:19,378: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:39:19] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:39:39,973: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:39:39,973: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:39:40,273: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:39:40] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:39:40,574: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:39:40] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:39:44,013: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:39:44,293: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:39:44] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:40:32,541: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:40:32,541: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:40:33,011: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:40:33,291: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:40:33] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:40:58,892: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:40:58,892: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:41:02,059: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:41:02,336: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:41:02] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:41:30,887: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:41:30] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:41:37,486: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:41:37,487: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:41:39,834: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:41:40,113: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:41:40] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:42:16,216: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:42:16,217: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:42:16,797: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:42:16] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:42:20,666: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:42:20,945: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:42:20] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:42:46,860: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:42:46,860: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:42:47,619: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:42:47] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:42:51,877: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:42:52,155: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:42:52] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:43:52,364: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-08 14:43:52,364: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-03-08 14:43:52,398: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:43:52] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:43:59,192: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:43:59] "GET / HTTP/1.1" 200 -]
+[2024-03-08 14:44:05,827: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:44:06,108: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:44:06] "POST /predict HTTP/1.1" 200 -]
+[2024-03-08 14:53:07,780: WARNING: optimizer: At this time, the v2.11+ optimizer `tf.keras.optimizers.SGD` runs slowly on M1/M2 Macs, please use the legacy Keras optimizer instead, located at `tf.keras.optimizers.legacy.SGD`.]
+[2024-03-08 14:53:08,005: INFO: _internal: 192.168.0.158 - - [08/Mar/2024 14:53:08] "POST /predict HTTP/1.1" 200 -]
+[2024-03-10 21:17:23,815: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.158:8080]
+[2024-03-10 21:17:23,817: INFO: _internal: [33mPress CTRL+C to quit[0m]
