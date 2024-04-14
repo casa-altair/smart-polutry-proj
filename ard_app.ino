@@ -3,17 +3,19 @@
 
 #define PIN_MQ135 A2
 #define DHTPIN 2
+#define temp_fan_pin 7
+#define temp_thresold 30.00
 #define DHTTYPE DHT11
-DHT dht(DHTPIN, DHTTYPE);
 
+DHT dht(DHTPIN, DHTTYPE);
 MQ135 mq135_sensor(PIN_MQ135);
 
 float temperature, humidity;
 void setup() {
   Serial.begin(9600);
   dht.begin();
-  pinMode(7, OUTPUT);
-  digitalWrite(7, HIGH);
+  pinMode(temp_fan_pin, OUTPUT);
+  digitalWrite(temp_fan_pin, HIGH);
 }
 void loop() {
   humidity = dht.readHumidity();
@@ -23,8 +25,8 @@ void loop() {
     Serial.println(F("Failed to read from DHT sensor!"));
     return;
   }
-  digitalWrite(7, ((temperature < 35.0) ? LOW : HIGH));
-  (temperature < 35.0) ? Serial.println("LOW") : Serial.println("HIGH");
+
+  digitalWrite(temp_fan_pin, ((temperature < temp_thresold) ? HIGH : LOW));
  
   
   float correctedPPM = mq135_sensor.getCorrectedPPM(temperature, humidity);
